@@ -32,6 +32,17 @@ main{
     right:0;
     transition: right 0.2s
 }
+.sh-social-holder-mobile{
+    position: relative;
+    right:0;
+    transition: right 0.2s
+}
+/*@media (max-width: 768px) { 
+    .sh-social-holder{
+        right:0;
+    }
+    
+}*/
 .sh-screen-big{
     background-image: url('assets/screen-big.png');
     background-size: contain;
@@ -48,4 +59,14 @@ main{
     background-size: contain;
     background-repeat: no-repeat;
     transform: translate(35%,30%);
+}
+#menu_list{
+    position:fixed;
+    transition:right 0.2s
+}
+.sh-show-nav{
+    right:10%;
+}
+.sh-hide-nav{
+    right:-50%;
 }
