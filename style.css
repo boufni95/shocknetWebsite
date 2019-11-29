@@ -2,8 +2,15 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 main{
-    background-image: url(assets/bg-effect-shape.png) 0% 0% no-repeat padding-box;
-    background: transparent linear-gradient(352deg, #3775AE 0%, #14181C 100%) 0% 0% no-repeat padding-box;
+    background: url('assets/gb-effect-points.png') top no-repeat,url('assets/bg-effect-shape.png') bottom no-repeat, transparent linear-gradient(352deg, #3775AE 0%, #14181C 100%) 0% 0% no-repeat padding-box;
+    
+    background-size: 300%;
+}
+@media (min-width: 768px) { 
+    main{
+        background-size: 120%;
+    }
+    
 }
 .dot {
     height: 0.5rem;
@@ -19,8 +26,11 @@ main{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    
 }
-.btn-warning { background-color: #F6AF26; }
+.btn-warning { background-color: #F6AF26;border-color: #F6AF26; }
+.btn-outline-warning {border-color: #F6AF26; }
+.btn-outline-warning:hover { background-color: #F6AF26;border-color: #F6AF26; }
 .text-warning { color: #F6AF26; }
 
 .sh-social-holder{
@@ -70,3 +80,4 @@ main{
 .sh-hide-nav{
     right:-50%;
 }
+
